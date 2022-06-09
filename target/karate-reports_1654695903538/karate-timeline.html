@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/FetchURL[1:3]","start":1654695839635,"end":1654695840383,"title":"src\/test\/java\/tests\/FetchURL[1:3] 09:43:59.635-09:44:00.383 Fetch and print the api"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/FetchURL[2:8]","start":1654695840390,"end":1654695840473,"title":"src\/test\/java\/tests\/FetchURL[2:8] 09:44:00.390-09:44:00.473 Print the fetched API"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/FetchURL[3:18]","start":1654695840477,"end":1654695840779,"title":"src\/test\/java\/tests\/FetchURL[3:18] 09:44:00.477-09:44:00.779 negative test case"},{"id":4,"group":1,"content":"src\/test\/java\/tests\/FetchURL[4:23]","start":1654695840784,"end":1654695841073,"title":"src\/test\/java\/tests\/FetchURL[4:23] 09:44:00.784-09:44:01.073 negative test case :part 2","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/tests\/FetchURL[5:28]","start":1654695841078,"end":1654695841083,"title":"src\/test\/java\/tests\/FetchURL[5:28] 09:44:01.078-09:44:01.083 Go into the API details"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("4bc1aefa-7f5e-44bf-9031-98c89e905664",{name:"AjinkyaKunjir"});
+    posthog.capture("report_feature",{karate_version:"1.2.1.RC2",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.tests.Auth_token</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-09 09:09:16 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Use the auth_token for API</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/Auth_token.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Authorization Token use in API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Use the auth_token for API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1359</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print myVarName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">09:09:15.333 [print] hello karate 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:09:15.336 [print] 73ca030aac9f54c822428c5a83e1133755401720c023c3b982a62b896a1345a3 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer&#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/public/v2/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1341</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">09:09:15.619 request:
+1 &gt; GET https://gorest.co.in/public/v2/users
+1 &gt; Authorization: Bearer73ca030aac9f54c822428c5a83e1133755401720c023c3b982a62b896a1345a3
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/18.0.1.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:09:16.666 response time in milliseconds: 1045
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 09 Jun 2022 13:09:17 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Vary: Origin
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; X-Pagination-Total: 2214
+1 &lt; X-Pagination-Pages: 111
+1 &lt; X-Pagination-Page: 1
+1 &lt; X-Pagination-Limit: 20
+1 &lt; X-Links-Previous: 
+1 &lt; X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+1 &lt; X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+1 &lt; ETag: W/&quot;16c5d338b04bb2af34cd3dc5d0c46032&quot;
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; X-Request-Id: 20dbd91b-3159-4bc6-9313-be386f3af877
+1 &lt; X-Runtime: 0.006435
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+[{&quot;id&quot;:2280,&quot;name&quot;:&quot;Sushma Kocchar JD&quot;,&quot;email&quot;:&quot;sushma_jd_kocchar@runolfsdottir.info&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2279,&quot;name&quot;:&quot;Oormila Pillai&quot;,&quot;email&quot;:&quot;oormila_pillai@schmidt.co&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2278,&quot;name&quot;:&quot;Bhadran Naik&quot;,&quot;email&quot;:&quot;naik_bhadran@carroll.co&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2277,&quot;name&quot;:&quot;Priya Jain&quot;,&quot;email&quot;:&quot;priya_jain@corwin-jones.co&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2276,&quot;name&quot;:&quot;Bhudeva Varman JD&quot;,&quot;email&quot;:&quot;bhudeva_varman_jd@kreiger-nikolaus.info&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2275,&quot;name&quot;:&quot;Shashi Iyengar DO&quot;,&quot;email&quot;:&quot;do_iyengar_shashi@langworth-ziemann.info&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2274,&quot;name&quot;:&quot;Aruna Mishra&quot;,&quot;email&quot;:&quot;aruna_mishra@schneider-swift.info&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2273,&quot;name&quot;:&quot;Bhadrak Chaturvedi Ret.&quot;,&quot;email&quot;:&quot;bhadrak_ret_chaturvedi@torphy-kozey.co&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:2272,&quot;name&quot;:&quot;Ranjit Pandey JD&quot;,&quot;email&quot;:&quot;jd_ranjit_pandey@steuber.name&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2271,&quot;name&quot;:&quot;Devdan Tagore&quot;,&quot;email&quot;:&quot;tagore_devdan@wisozk.io&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:2270,&quot;name&quot;:&quot;Prof. Sanjay Naik&quot;,&quot;email&quot;:&quot;prof_naik_sanjay@barton.info&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2269,&quot;name&quot;:&quot;Mr. Chetan Chopra&quot;,&quot;email&quot;:&quot;chetan_chopra_mr@bednar-larson.info&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2268,&quot;name&quot;:&quot;Devasree Deshpande DVM&quot;,&quot;email&quot;:&quot;deshpande_devasree_dvm@klein.biz&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2267,&quot;name&quot;:&quot;Anish Dubashi&quot;,&quot;email&quot;:&quot;anish_dubashi@vandervort-feil.io&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2266,&quot;name&quot;:&quot;Amritambu Khatri&quot;,&quot;email&quot;:&quot;khatri_amritambu@hilll-batz.biz&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:2265,&quot;name&quot;:&quot;Trilochan Johar&quot;,&quot;email&quot;:&quot;trilochan_johar@osinski.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2264,&quot;name&quot;:&quot;Rep. Deeptimay Talwar&quot;,&quot;email&quot;:&quot;deeptimay_rep_talwar@lockman-howe.name&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;inactive&quot;},{&quot;id&quot;:2263,&quot;name&quot;:&quot;Sachin Marar&quot;,&quot;email&quot;:&quot;marar_sachin@nikolaus.org&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2262,&quot;name&quot;:&quot;Brahmanandam Reddy&quot;,&quot;email&quot;:&quot;reddy_brahmanandam@johnson.org&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;},{&quot;id&quot;:2261,&quot;name&quot;:&quot;Jaimini Chattopadhyay&quot;,&quot;email&quot;:&quot;chattopadhyay_jaimini@keeling.co&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

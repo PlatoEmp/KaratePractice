@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/FetchURL[1:3]","start":1654698549123,"end":1654698549831,"title":"src\/test\/java\/tests\/FetchURL[1:3] 10:29:09.123-10:29:09.831 Fetch and print the api"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/FetchURL[2:8]","start":1654698549838,"end":1654698549911,"title":"src\/test\/java\/tests\/FetchURL[2:8] 10:29:09.838-10:29:09.911 Print the fetched API"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/FetchURL[3:18]","start":1654698549915,"end":1654698550173,"title":"src\/test\/java\/tests\/FetchURL[3:18] 10:29:09.915-10:29:10.173 negative test case"},{"id":4,"group":1,"content":"src\/test\/java\/tests\/FetchURL[4:23]","start":1654698550178,"end":1654698550682,"title":"src\/test\/java\/tests\/FetchURL[4:23] 10:29:10.178-10:29:10.682 negative test case :part 2","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/tests\/FetchURL[5:28]","start":1654698550687,"end":1654698550703,"title":"src\/test\/java\/tests\/FetchURL[5:28] 10:29:10.687-10:29:10.703 Go into the API details"},{"id":6,"group":1,"content":"src\/test\/java\/tests\/FetchURL[6:38]","start":1654698550709,"end":1654698551509,"title":"src\/test\/java\/tests\/FetchURL[6:38] 10:29:10.709-10:29:11.509 GET API- GoRest Feature"},{"id":7,"group":1,"content":"src\/test\/java\/tests\/FetchURL[7:49]","start":1654698551512,"end":1654698552310,"title":"src\/test\/java\/tests\/FetchURL[7:49] 10:29:11.512-10:29:12.310 GET API- GoRest Feature Part 2- Negative Test case"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
